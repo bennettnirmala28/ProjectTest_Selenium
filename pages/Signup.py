@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
-from utils.ElementUtil import ElementUtil
+from utils import ElementUtil
 
 driver = webdriver.Firefox()
 driver.get ("https://automationexercise.com/")
@@ -15,8 +15,8 @@ emailaddress = driver.find_element(By.XPATH, "//input[@data-qa='signup-email']")
 Signup_button = driver.find_element(By.XPATH, "//button[normalize-space()='Signup']").click()
 
 #Enter Account Information
-Title = driver.find_element(By.XPATH,"//input[@id='id_gender2']").click()
-Password = driver.find_element(By.ID,"password").send_keys ("Nirmala@123")
+title = driver.find_element(By.XPATH, "//input[@id='id_gender2']").click()
+password = driver.find_element(By.ID, "password").send_keys("Nirmala@123")
 day_field = driver.find_element(By.ID,"days")
 day_field.send_keys("15")
 month_field = driver.find_element(By.ID,"months")

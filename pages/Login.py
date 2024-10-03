@@ -1,7 +1,7 @@
 """  POM of the Login page """
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
-from utils.ElementUtil import ElementUtil
+from utils import ElementUtil
 
 
 class LoginPage(ElementUtil):
@@ -28,27 +28,3 @@ class LoginPage(ElementUtil):
         self.input_username(username)
         self.input_password(password)
         self.click_on_login_button()
-
-
-
-
-
-
-
- 
-
-     
-       
-
-
-        
-        
-
-   
-
-
-
-
-      
-
-   
